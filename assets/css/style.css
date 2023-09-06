@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 60);
+    width: 100%;
+    padding: 10px 80px;
+}
+
+
+.nav_bar .nav_logo {
+    justify-content: center;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+.nav_bar .nav_logo ul {
+    list-style: none;
+}
+
+.nav_bar .nav_logo ul li {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.nav_bar .nav_logo ul li img {
+    width: 30px;
+    justify-content: center;
+}
+
+.nav_bar .nav_logo ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nav_bar .nav_links {
+    justify-content: center;
+
+}
+
+.nav_bar .nav_links ul {
+    list-style: none;
+
+}
+
+.nav_bar .nav_links ul li {
+    display: inline;
+    padding: 0 20px;
+
+
+
+}
+
+.nav_bar .nav_links ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.nav_bar .nav_links ul li .menu_open {
+    display: none;
+}
+
+.nav_bar .nav_links ul li .menu_close {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+.nav_bar #btn {
+    display: none;
+}
+
+.nav_bar .social {
+    display: none;
+}
+
+.nav_bar .close {
+    display: none;
+}
+
+
+
+
+
+/* greatings ................... */
+
+.greatiings {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+}
+.greatiings .welcome{
+    text-decoration: none;
+}
+.greatiings .welcome h1{
+    font-size: 4rem;
+}
+.greatiings .wlcm{
+    text-decoration: none;
+}
+.greatiings .wlcm p{
+    font-size: 2rem;
+}
+
+.greatiings .infoline {
+    padding: 20px 0px;
+    align-items: center;
+ 
+}
+
+.greatiings .infoline a {
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(255, 3, 100);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+/* end.... */
+
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(238, 238, 238);
+    padding: 20px 70px;
+    
+   
+
+}
+
+.about .logo{
+    display: block;
+    justify-content: center;
+   
+    
+}
+
+.about .logo img{
+    width: 300px;
+   
+    
+}
+
+.about .about_txt{
+    display: block;
+    padding: 0px 100px;
+    justify-content: center;
+   
+    
+}
+
+.about .about_txt h2{
+    padding: 20px 0px;
+    width: 200px;
+   
+    
+}
+
+.apropos{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+   
+
+}
+
+.apropos .apropos_txt{
+    display: block;
+    
+
+
+}
+
+.apropos .apropos_txt p{
+    padding: 20px 0;
+    
+
+
+}
+
+.apropos .apropos_txt ul{
+    padding: 20px 0;
+    list-style: none;
+    
+
+
+}
+
+.apropos .apropos_txt ul li{
+    padding: 0 10px;
+    
+
+
+}
+.membres{
+    display: flex;
+    padding: auto;
+    flex-direction: column;
+    padding: 20px 140px;
+    align-items: center;
+
+   
+}
+
+.membres h2{
+    padding: 20px 40px;
+
+   
+}
+
+.membres .list_membres{
+    display: flex;
+    flex-wrap: wrap;
+    
+     
+}
+
+.membres .list_membres .membre_img{
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.membres .list_membres .membre_img img{
+    background-color: grey;  
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.membres .list_membres .membre_img h3{
+    text-align: center;
+}
+
+
+footer{
+    background: rgb(0, 0, 60);
+    color: white;
+    height: 80px;
+    padding: 40px 60px;
+}
+
+
+/* responsive nav bar  */
+
+@media (max-width:480px) {
+    .nav_bar {
+        display: flex;
+        background: rgb(0, 0, 60);
+        width: 100%;
+        padding: 5px 40px;
+    }
+
+    .nav_bar .nav_links {
+        display: none;
+
+    }
+
+    .nav_bar #btn {
+        display: block;
+        color: white;
+        font-size: 20px;
+
+    }
+
+    .cache {
+        display: block;
+        position: fixed;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        height: 800px;
+        justify-content: center;
+        padding: 0px 10px;
+        opacity: 90%;
+    }
+
+    .cache .nav_logo {
+        display: none;
+    }
+
+
+
+    .cache .nav_links {
+        display: block;
+        padding: 100px 10px;
+
+    }
+
+    .cache .nav_links ul {
+        list-style: none;
+
+    }
+
+    .cache .nav_links ul li {
+        display: inline;
+    }
+
+    .cache .nav_links ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 60);
+        text-align: center;
+        font-size: 2.8rem;
+        text-align: center;
+        
+    }
+
+    .cache .nav_links ul li a:hover {
+        border-bottom: 2px solid rgb(0, 0, 72);
+    }
+
+    .cache #btn {
+        display: none;
+    }
+
+    .cache .social {
+        display: inline;
+        color: rgb(0, 0, 60);
+        font: 1.5em sans-serif;
+        padding: 30px 20px;
+        
+    }
+
+    .cache #off {
+        display: block;
+        color: black;
+        font-size: 5rem;
+    }
+
+    .greatiings {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .greatiings .welcome{
+        text-decoration: none;
+    }
+    .greatiings .welcome h1{
+        font-size: 2rem;
+    }
+    .greatiings .wlcm{
+        text-decoration: none;
+    }
+    .greatiings .wlcm p{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: rgb(238, 238, 238);
+        padding: 10px 10px;
+        align-items: start;
+       
+    
+    }
+    
+    .about .logo{
+        display: block;
+        justify-content: center;
+       
+        
+    }
+    
+    .about .logo img{
+        width: 150px;
+       
+        
+    }
+    
+    .about .about_txt{
+        display: block;
+        padding: 20px 0px;
+        justify-content: center;
+       
+        
+    }
+    .apropos{
+        display: flex;
+        flex-direction: column;
+        padding: 25px 20px;
+       
+    
+    }
+    
+    .apropos .apropos_txt{
+        display: block;
+        
+    
+    
+    }
+    
+  
+    
+    .apropos .apropos_txt ul li{
+        padding: 0 10px;
+        
+    
+    
+    }
+
+    .membres{
+        display: flex;
+        padding: auto;
+        flex-direction: column;
+        padding: 20px 0px;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .membres h2{
+        padding: 20px 0px;
+        text-align: left;
+
+    }
+    
+    .membres .list_membres{
+        width: 370px;
+        align-items: center;
+    }
+    
+    .membres .list_membres .membre_img{
+        
+        
+        
+    }
+    
+    .membres .list_membres .membre_img img{
+        background-color: grey;  
+        height: 140px;
+        width: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .membres .list_membres .membre_img h3{
+        text-align: center;
+        text-decoration: none;
+    }
+    
+   
+    
+  
+    
+}
+
