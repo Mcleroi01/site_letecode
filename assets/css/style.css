@@ -290,7 +290,7 @@
     
 }
 
-.cours .cours .cours _img h3{
+.cours .cours .cours_img h3{
     text-align: center;
 }
 .abonne{
@@ -318,19 +318,10 @@
     margin: 8px;
     color: white;
 }
-
-
-footer{
-    background: rgb(0, 0, 60);
-    color: white;
-    height: 80px;
-    padding: 40px 60px;
-}
-
 .contacter{
     display: flex;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 30px 30px;
 
     
 }
@@ -348,17 +339,14 @@ footer{
 
 .contacter .contacter_input {
     display: flex;
-    align-items: center;
-    margin: 50px;
-   
-   
-  
-  
-
-    
+    flex-wrap: wrap;
+}
+.contacter .contacter_input .input{
+    flex-direction: column;
+    padding: 3px;
 }
 
-.contacter .contacter_input input[type='text']{
+.contacter .contacter_input input[type='text'],select,input[type=email]{
     align-items: center;
     width: 300px;
     height: 40px;
@@ -366,34 +354,7 @@ footer{
     background-color: rgb(217, 217, 217);
     border: none;  
 }
-.contacter .contacter_input input[type='email']{
-    align-items: center;
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: rgb(217, 217, 217);
-    border: none;
-    
-   
-  
-  
 
-    
-}
-.contacter .contacter_input select{
-    align-items: center;
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: rgb(217, 217, 217);
-    border: none;
-    margin: 8px;
-   
-  
-  
-
-    
-}
 .contacter .contacter_input textarea{
     padding: 12px 20px;
     border:2px solid none;
@@ -402,7 +363,12 @@ footer{
     resize: none;
     width: 250px;
     height: 100px;
+    margin: 10px;
   
+}
+.contacter .contacter_input .btn{
+    padding: 90px;
+   
 }
 .contacter .contacter_input input[type='button']{
     align-items: center;
@@ -413,14 +379,16 @@ footer{
     border: none;
     margin: 8px;
     color: white;
-  
-  
-
-    
+   
 }
 
 
-
+footer{
+    background: rgb(0, 0, 60);
+    color: white;
+    height: 80px;
+    padding: 40px 60px;
+}
 
 
 /* responsive  */
@@ -644,6 +612,78 @@ footer{
     .cours .list_cours .cours_img h3{
         text-align: center;
         text-decoration: none;
+    }
+
+
+
+
+    .contacter{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+    
+        
+    }
+    .contacter .contacte_title{
+        text-align: left;
+        padding: 0px 10px;
+        
+    }
+    .contacter .contacte_title h1{
+        font-size: 1rem;
+        
+        
+    }
+    
+    .contacter .contacte_title p{
+        font-size: 0.7rem;
+        
+        
+    }
+    
+    .contacter .contacter_input {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacter .contacter_input .input{
+        flex-direction: column;
+        padding: 3px;
+    }
+    
+    .contacter .contacter_input input[type='text'],select,input[type=email]{
+        align-items: center;
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgb(217, 217, 217);
+        border: none;  
+    }
+    
+    .contacter .contacter_input textarea{
+        padding: 10px 10px;
+        border:2px solid none;
+        border-radius: 4px;
+        background-color: rgb(217, 217, 217);
+        resize: none;
+        width: 300px;
+        height: 100px;
+        margin: 10px;
+      
+    }
+    .contacter .contacter_input .btn{
+        padding: 0px;
+       
+    }
+    .contacter .contacter_input input[type='button']{
+        align-items: center;
+        width: 300px;
+        height: 30px;
+        border-radius: 9px;
+        background-color: rgb(255, 4, 104);
+        border: none;
+        margin: 8px;
+        color: white;
+       
     }
    
     
